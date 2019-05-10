@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+  font-family: Roboto;
+  margin: 0;
+  border: 0;
+}
+
+p, h1, h2 {
+  font-family: Montserrat, sans-serif;
+}
+
+@font-face {
+    font-family: Potra;
+    src: url('./fonts/Potra.ttf');
+}
+
+.header {
+    background-color: #E60026;
+    border-bottom: 1px solid white;
+    padding: 2vw;
+}
+
+.header h1 {
+    font-size: 40px;
+    font-family: Potra, Roboto;
+    color: #fff;
+    text-align: center;
+}
+
+.inicio {
+  background-color: #fff;
+    back
+    width: 100%;
+    text-align: center;
+}
+
+.inicio h1 {
+    font-size: 60px;
+    padding: 15%;
+    color: red;
+}
+
+.row {
+  background-color: #E60026;
+  color: #fff;
+  text-align: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 30px 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+table {
+  padding: 30px 20px;
+  margin: auto;
+  margin-top: 20px;
+  border-collapse: collapse;
+  width: 60%;
+}
+
+
+th {
+  border: 1px solid #bdc3c7;
+  padding: 60px 60px;
+}
+
+.button {
+  padding: 20px 20px;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  margin-top: 20px;
+}
+
+.button:hover {
+  color: #E60026;
+  background-color: #fff;
+  border: 1px solid #E60026;
+}
+
+#unete {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: #E60026;
+  border-top: 2px solid white;
+  color: #fff;
+  padding: 40px 28px;
+  font-size: 40px;
+  cursor: pointer;
+  text-align: center;
+}
+
+
+
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
