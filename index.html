@@ -2,26 +2,31 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="icon" type="image/png" href="img/icon.png">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <script src="script.js"></script>
   <title>Redmedic</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="icon" type="image/png" href="img/icon.png">
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
 </head>
 <body>
-  <div class="header">
+
+  <!--
+  <div id="titulo">
     <h1>RedMedic</h1>
   </div>
+  -->
 
-  <div class="inicio">
-    <script>document.getElementsByClassName("inicio")[0].style.height = screen.height*0.8 + "px";</script>
-    <h1>Slogan de Redmedic o algo asi</h1>
+  <div id="inicio">
+    <div id="titulo"><h1>RedMedic</h1></div>
+    <div id="expli"><h2>El Internet de la Salud</h2></div>
   </div>
+  <script src="js/particles.js"></script>
 
   <div class="row">
     <h1>¿Qué es Redmedic?</h1>
-    <p style="padding-top:2vw;width:60%;margin:auto;">
+    <p style="padding-top:2vw;width:60%;margin:auto;margin-bottom:40px;">
       La definicion abstracta de Redmedic
       Lorem ipsum dolor sit amet, consectetur adipiscing elit,
       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -31,6 +36,7 @@
       Excepteur sint occaecat cupidatat non proident, sunt in culpa
       qui officia deserunt mollit anim id est laborum.
     </p>
+    <a class="button" href="">Descripción técnica</a>
   </div>
 
   <div class="row" style="background-color:#fff;color:#E60026;width:80%;margin:auto;">
@@ -60,7 +66,7 @@
       </p>
     </div>
     <div class="column" style="border: 1px solid red;">
-      <img src="img/costes.png" style="width:40px;height:40px;">
+      <img src="img/costes.png" style="width:50px;height:40px;">
       <h2>Ecosistema datos</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -96,20 +102,15 @@
       <a class="button" href="">Read more</a>
     </div>
     <div class="column">
-      <h2 style="margin-bottom:40px;">¿Qué ecosistema se crea alrededor de Redmedic?</h2>
+      <h2 style="margin-bottom:40px;">¿Qué ecosistema se crea alrededor de la red?</h2>
       <a class="button" href="">Read more</a>
     </div>
   </div>
 
-  <!---
-  <button id="unete"><img src="img/icon.png"> ¡Únete a la red! <img src="img/icon.png"> </button>
-  ---->
-
   <div class="row" style="background-color:#fff">
     <h2><a style="color:#E60026;text-decoration:none" href="mailto:balcells.oscar@gmail.com">balcells.oscar@gmail.com</a></h2>
-    <p style="color:#E60026;margin-top:5px;">Copyright 2019 Oscar Balcells Obeso</p>
+    <p style="color:#E60026;margin-top:5px;">Copyright &copy; 2019 Óscar Balcells Obeso</p>
   </div>
-
 
 </body>
 </html>
