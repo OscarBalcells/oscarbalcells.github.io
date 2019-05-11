@@ -53,6 +53,10 @@ canvas {
   padding: 25px 20px;
 }
 
+.tabla {
+  height: 280px;
+}
+
 .row:after {
   content: "";
   display: table;
