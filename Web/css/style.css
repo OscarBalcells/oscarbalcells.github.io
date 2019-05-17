@@ -53,14 +53,20 @@ canvas {
   padding: 25px 20px;
 }
 
-.tabla {
-  height: 280px;
-}
-
 .row:after {
   content: "";
   display: table;
   clear: both;
+}
+
+.tabla {
+  height: 35vh;
+}
+
+.iconito {
+	width:40px;
+	height:40px;
+	margin-bottom:5px;
 }
 
 .button {
@@ -77,7 +83,14 @@ canvas {
   border: 1px solid #E60026;
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-height: 750px) {
+	.tabla {
+		height:325px;
+		overflow: hidden;
+	}
+}
+
+@media screen and (max-width:900px) {
   .column {
     width: 50%;
   }
@@ -87,9 +100,35 @@ canvas {
   #expli {
     font-size: 30px;
   }
+	.tabla {
+		height:325px;
+		overflow: hidden;
+	}
+	#tercero {
+		width: 100%;
+	}
 }
 
-@media screen and (max-width:600px) {
+@media screen and(max-width:750px) {
+	.column {
+    width: 50%;
+  }
+  #titulo {
+    font-size: 40px;
+  }
+  #expli {
+    font-size: 30px;
+  }
+	.tabla {
+		height:525px;
+		overflow: hidden;
+	}
+	#tercero {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width:650px) {
   .column {
     width: 100%;
   }
@@ -98,5 +137,8 @@ canvas {
   }
   #expli {
     font-size: 30px;
+  }
+  .tabla {
+    height: auto;
   }
 }
