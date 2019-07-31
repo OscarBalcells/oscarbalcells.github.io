@@ -1,4 +1,4 @@
-# Redmedic
+# RedMedic
 Este es el repositorio que contiene la web de redmedic.net clonada.
 
 El Blockchain de la Salud.
