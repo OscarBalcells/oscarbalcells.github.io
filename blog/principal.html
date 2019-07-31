@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Redmedic</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../css/blog.css">
+  <link id="dynamic-favicon" rel="icon" type="image/x-icon" href="../img/favicons/favicon1.png">
+	<script src="../js/particlesScript.js"></script>
+  <link href="../css/montserrat.css" rel="stylesheet">
+  <link href="../css/cormorant.css" rel="stylesheet">
+</head>
+<body>
+	<div id="header">
+		<a id="redmedic" href="../index.html">RedMedic:</a>
+		&nbsp&nbsp
+		<span id="nombre">descripción técnica</span>
+	</div>
+
+	<!--- Particulas -->
+	<div id="inicio"></div>
+	<div id="content">
+<div style="height:10px;"></div>
+
+<div class="apartado">
+En este artículo te voy a explicar que es RedMedic exactamente desde un punto de vista específico, técnico y funcional.
+<br><br>
+RedMedic es una aplicación descentralizada que se encuentra en el Blockchain de Ethereum.
+Con esta aplicación se gestionan los accesos a datos médicos de pacientes. Mediante sencilla criptografía de clave pública y clave privada, el paciente
+puede poseer un historial virtual médico y controlar con su firma digital quien tiene acceso a sus datos. El objetivo de este proyecto es utilizar está funcionalidad como
+base para poder desarrollar aplicaciones más avanzadas como por ejemplo un mercado de compraventa de datos médicos o acuerdos inteligentes con aseguradoras.
+<br><br>
+Si no sabes lo que es una aplicación descentralizada o no entiendes muy bien para lo que sirve, mírate algo de aquí: (están puestos por orden de dificultad)
+<br><br>
+1) <a href="https://youtu.be/Yn8WGaO__ak">Que es Blockchain en 5 minutos de PlayGround</a><br>
+2) <a href="ethereum.html">Ethereum y Smart Contracts de Oscar Balcells</a><br>
+3) <a href="https://ethereum.github.io/yellowpaper/paper.pdf">Whitepaper de Ethereum de Gavin Wood y Vitalik Buterin</a><br>
+</div>
+<div class="apartado">
+<h2>Sistema de gestión de datos descentralizado</h2>
+Bueno pues para empezar, creo que lo más importante es entender exactamente lo que es un sistema de gestión de datos médicos descentralizado.
+<br><br>
+Vamos a ir paso por paso.
+<br><br>
+Lo primero es aclarar que es a lo que yo me refiero cuando digo "datos médicos".
+<br><br>
+En RedMedic hay datos médicos sobre pacientes. Cada paciente tiene un perfil y en ese perfil están puestos datos sobre el/ella.
+Aunque parezca obvio lo que acabas de leer, es importante entender que RedMedic no es una simple base de datos con muchas radiografías,
+resultados de analíticas y otros datos anonimizados, sino que es un conjunto de datos estructurado en perfiles y que cada paciente tiene
+su perfil.
+<br><br>
+Además es importante saber que hay dos tipos de perfiles para cada paciente: Está el perfil parcial y el perfil maestro. El perfil parcial es el perfil que tenga el hospital A o el hospital B almacenado sobre ti en su base de datos. El perfil maestro es el resultado de combinar el perfil parcial del hospital A con el perfil parcial del hospital B. Suena complicado pero lo único de lo que hay que saber que el perfil maestro es el resultado de agregar todos los perfiles parciales de un paciente.
+<br><br>
+¿Porque un perfil parcial?<br>
+Tus datos médicos no se generan en un solo hospital o laboratorio. Por esta razón, tus datos estarán esparcidos en diferentes
+bases de datos de distintos centros de salud. Se darán ocasiones en las que una persona solo quiera compartir un documento específico
+y no su perfil entero. Esto sumado al hecho de que un centro de salud es responsable únicamente de los datos que generes en su centro
+hacen que se tenga que segmentar según el origen de cada dato tuyo publicado.
+<br><br>
+Y, ¿qué información habrá en RedMedic sobre un paciente?<br>
+Estará tu ficha médica, la misma que hay almacenada en el hospital. A esta ficha médica se le aplicará un filtro para quitar la información irrelevante o información propietaria del centro. Después se aplicará otro filtro para estandarizar todos los campos, por ejemplo si en una analítica se mide el nivel de potasio en gramos por litro, y el estándar en RedMedic para medir el nivel de potasio es minimol por litro, se hará la conversión automáticamente.
+<br><br>
+Ahora que ya tenemos más o menos la parte de datos médicos aclarada, pasamos a lo siguiente. ¿Qué es un sistema de gestión de datos (sin que sea descentralizado)?
+<br><br>
+En este sistema de gestión de datos (RedMedic), se establecen los permisos que tiene cada persona para acceder a una determinada información. Por ejemplo, si yo como paciente, marco en mi perfil electrónico de RedMedic que cualquier persona puede ver mi grupo sanguineo y mis alergias, cualquier persona que vaya a RedMedic podrá ver esa información y por ejemplo podrían usarla para salvarme la vida en caso de emergencia.
+<br><br>
+(cuando digo que una persona específica tiene acceso me refiero a una persona con una firma digital específica)
+<br><br>
+Una cosa muy importante a tener en cuenta es que en RedMedic no hay nada información tuya, sino que solo están los permisos de quien tiene acceso a ellos. Tu perfil médico no está en RedMedic, sino que está repartido en las bases de datos de distintos centros de salud donde hayas estado. RedMedic no es una base de datos médicos, es solo un sistema para establecer quien tiene acceso a según que tipo de datos tuyos.
+<br><br>
+¿Porqué no están los datos directamente?
+<br><br>
+Primero, porque los datos médicos son muy muy grandes. Ocupan mucho espacio, y en los Blockchains tan ineficientes que tenemos a día de hoy, eso costaría demasiado dinero. Sería un sistema poco escalable.
+<br><br>
+Segundo, porque mantener secretos en un Blockchain público y abierto es muy complicado. Por lo tanto, tener datos semiprivados, requiere de mucha ingeniería y critpografía difíciles de implementar, auditar y usar.
+<br><br>
+Y tercero, porque el hecho de que los datos estén custodiados por un hospital los valida y legitima. Si cada persona subiera sus datos manualmente, podría por ejemplo crear muchos perfiles falsos o mentir en su propio perfil para cobrar más dinero.
+<br><br>
+¿Descentralizado? ¿Para qué?
+<br><br>
+He escrito un artículo solo sobre esto. Aquí te lo dejo.
+</div>
+
+<div class="apartado">
+<h2>Arquitectura de la aplicación</h2>
+Una aplicación descentralizada como RedMedic, está compuesta por diferentes Smart Contracts que tienen distintas funcionalidades.
+Para empezar vamos a repasar la lista de participantes en RedMedic para ver como interactua cada uno con la aplicación.
+<br><br>
+<div style="text-decoration:underline;">1) Paciente</div>
+El paciente es el usuario de la red y decide quien tiene acceso a qué. Tiene una clave privada con la cual puede firmar sus transacciones que enviará a RedMedic para editar permisos. El paciente interactua por lo tanto con RedMedic de dos formas: registro y editar permisos.
+<br><br>
+Ya que RedMedic es una aplicación pública y abierta al mundo, hay que tomar más precauciones para evitar que hackeen la red. Para evitar que se puedan unir pacientes falsos, el registro de un nuevo paciente tendrá que hacerse con un proveedor de salud, que garantizará que se trata de un paciente real. Esta norma tiene sentido ya que un paciente normalmente se registrará en RedMedic cuando visite un proveedor de salud.
+<br><br>
+<div style="text-decoration:underline;">1) Guardián</div>
+El guardián es el que custodia algo. En este caso, nuestro guardián custodia datos, datos de sus pacientes. Cualquier proveedor de salud puede ser un guardián, tanto un hospital, como un laboratorio o una aseguradora. El único requisito que ha de cumplir un proveedor de salud para poder ser un guardián es que sea aceptado por más del 20% de la red.
+¿Porque el 20%? Es un número arbitrario que he puesto. Lo importante es que este número ni demasiado pequeño ni demasiado grande ya si fuera muy grande, la competencia entre empresas bloquearía la entrada para nuevas organizaciones, y si fuera muy pequeño, actores malicioses podrían infiltrarse en la red para sabotearla.
+<br><br>
+Un guardián interactua con RedMedic de alguna de estas formas: registro, votar un nuevo guardián, registro de un paciente y crear una nueva relación proveedor-paciente (ahora te explicaré lo que son).
+<br><br>
+Bueno pues como verás, tampoco hay muchos tipos de participantes. Para hacer que el sistema sea más sencillo, solo he especificado dos, aunque para funcionalidades más avanzadas simplemente se pueden crear más y combinarlos con los que ya existen. RedMedic es un sistema muy básico y modular que sirve como base para cosas más complejas, como ya se menciona en la introducción.
+<br><br>
+<h2>Intercambio real</h2>
+
+Hasta ahora solo has visto las interacciones online. Las cosas que ocurren en RedMedic. No obstante, el intercambio real de datos no se hace a través del Blockchain. En el Blockchain solo están los links a los datos. Los datos en sí, residen en las bases de datos de los proveedores de salud, los guardianes.
+<br><br>
+Un guardián custodia los perfiles de sus pacientes, los datos que se han generado en su centro. Cada guardián será como una API y la puerta de entrada a esa API estará publicada en el Blockchain. Una ventanita a la que se conecta alguien para recibir datos. Cuando alguien se conecte para pedir datos, el guardián mirará la firma digital de esa persona (la firma estará metida en la transacción) y si ve que esa firma tiene permiso para acceder a los datos que pide, el guardián le dará lo que pide.
+<br><br>
+La base de datos del guardián está sincronizada con la base de datos local del proveedor de salud. Si el paciente visita el centro y por ejemplo le detectan una alergia, el doctor actualizará la base de datos del centro y por lo tanto se actualizará también la base de datos vinculada a RedMedic.
+<br><br>
+<h2>Minería</h2>
+
+Ahora mismo, RedMedic reside en el Blockchain de Ethereum. Lo que significa que los mineros en RedMedic, los que mantienen el Blockchain, encuentran nuevos bloques y ejecutan los smart contracts, son los mismos mineros de Ethereum. No obstante, una posible opción para hacer que los costes dentro de la plataforma bajen sería clonar Ethereum y tener un blockchain independiente. En este Blockchain se podría establecer un protocolo de consenso personalizado para la plataforma. La opción más viable para este protocolo sería Proof of Authority, que muy resumidamente, significa que los mineros son los mismos guardianes, que son autoridades porque han tenido que ser aprobados para entrar.
+<br><br>
+<h2>Smart Contracts</h2>
+
+Esta es la parte importante. Son los engranajes que hacen funcionar la máquina. ¿Qué tipos de smart contracts hay en RedMedic y para que sirve cada uno?
+<br><br>
+1) Acta de registro guardianes
+<br>
+Cuando un guardián se quiera registrar, se comunica con este smart contract y le envía datos suyos, como por ejemplo la puerta de acceso para sus datos, y una firma digital que corrobore que es la organización que dice ser. El resto de guardianes se comunicaran entonces con este smart contract para votar si aprueban el nuevo guardián o no. (Se pueden automatizar los votos también). Si el guardián es rechazado, fuera. Si es aprobado, se añade a la lista de guardianes de RedMedic.
+<br><br>
+2) Perfil maestro paciente
+<br>
+Cuando se registra un paciente en RedMedic, lo que está haciendo es crear un nuevo perfil maestro que le pertenecerá a el. Solo hay un perfil maestro por paciente. En la creación de este perfil maestro, se especifican los datos del paciente para poder identificarlo únicamente en el Blockchain (y no en la vida real). Este perfil maestro es una especie de agregado de todos los perfiles parciales del paciente. Por lo tanto, tiene una lista de referencias a estos perfiles parciales.
+<br><br>
+3) Perfil parcial paciente
+<br>
+Cuando se establece una nueva relación proveedor-paciente o se utiliza por primera vez RedMedic en esta relación, se crea un nuevo smart contract que establece una relación entre el paciente A con el proveedor de salud y guardián B. Este Smart Contract se vinculará al perfil maestro del paciente y contendrá los permisos de quien puede acceder a que cosa dentro de todos los datos generados en esta relación.
+<br><br>
+Aquí te dejo un diagrama que lo describe todo muy bien.
+<br><br>
+Cuando se quieran expandir las funcionalidades de RedMedic, simplemente se crearán nuevos tipos de smart contracts.
+<br><br>
+<h2>Aplicación de escritorio</h2>
+
+He desarrollado una aplicación de escritorio para demostrar la funcionalidad principal de RedMedic. En esta app de escritorio, un paciente puede visualizar su perfil maestro, que le ofrece un único y organizado perfil digital. Además puede controlar los permisos para cada uno de los perfiles parciales que tenga. Por ejemplo puede dejar a la firma digital X ver un determinado campo de alguna relación que tenga con algún proveedor.
+</div>
+
+<div class="apartado">
+    <div class="vuelve">
+        <button class="vuelveButton" onclick="window.location.href='../index.html'">
+            Vuelve al inicio
+        </button>
+    </div>
+</div>
+<div class="apartado"><br></div>
+
+</div>
+<script src="../js/particles.js"></script>
+<script src="../js/removeBanner.js"></script>
+<script>
+var counter = 1;
+document.head = document.head || document.getElementsByTagName("head")[0];
+
+function changeFavicon(src) {
+	var link = document.createElement("link");
+	var oldLink = document.getElementById("dynamic-favicon");
+	link.id = "dynamic-favicon";
+	link.href= src;
+	link.rel = "icon";
+	link.type = "image/x-icon";
+	document.head.removeChild(oldLink);
+	document.head.appendChild(link);
+}
+
+function changeCounter() {
+	if(counter === 9) counter = 1;
+	var newSrc = "../img/favicons/favicon" + counter + ".png";
+	changeFavicon(newSrc);
+	setTimeout(changeCounter, 300);
+	counter++;
+}
+
+changeCounter();
+</script>
+</body>
+</html>
