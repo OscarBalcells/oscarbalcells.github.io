@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Redmedic</title>
+  <title>RedMedic</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="../css/blog.css">
   <link id="dynamic-favicon" rel="icon" type="image/x-icon" href="../img/favicons/favicon1.png">
@@ -12,9 +12,11 @@
 </head>
 <body>
 	<div id="header">
-		<a id="redmedic" href="../index.html">RedMedic:</a>
-		&nbsp&nbsp
+		<div style="margin-left:20px">
+		<a id="redmedic" href="index.html">RedMedic:</a>
+		&nbsp
 		<span id="nombre">descripción técnica</span>
+	</div>
 	</div>
 
 	<!--- Particulas -->
@@ -78,7 +80,7 @@ Y tercero, porque el hecho de que los datos estén custodiados por un hospital l
 <br><br>
 ¿Descentralizado? ¿Para qué?
 <br><br>
-He escrito un artículo solo sobre esto. Aquí te lo dejo.
+He escrito un artículo solo sobre esto. <a href="blockchain.html">Aquí</a> te lo dejo.
 </div>
 
 <div class="apartado">
@@ -91,7 +93,7 @@ El paciente es el usuario de la red y decide quien tiene acceso a qué. Tiene un
 <br><br>
 Ya que RedMedic es una aplicación pública y abierta al mundo, hay que tomar más precauciones para evitar que hackeen la red. Para evitar que se puedan unir pacientes falsos, el registro de un nuevo paciente tendrá que hacerse con un proveedor de salud, que garantizará que se trata de un paciente real. Esta norma tiene sentido ya que un paciente normalmente se registrará en RedMedic cuando visite un proveedor de salud.
 <br><br>
-<div style="text-decoration:underline;">1) Guardián</div>
+<div style="text-decoration:underline;">2) Guardián</div>
 El guardián es el que custodia algo. En este caso, nuestro guardián custodia datos, datos de sus pacientes. Cualquier proveedor de salud puede ser un guardián, tanto un hospital, como un laboratorio o una aseguradora. El único requisito que ha de cumplir un proveedor de salud para poder ser un guardián es que sea aceptado por más del 20% de la red.
 ¿Porque el 20%? Es un número arbitrario que he puesto. Lo importante es que este número ni demasiado pequeño ni demasiado grande ya si fuera muy grande, la competencia entre empresas bloquearía la entrada para nuevas organizaciones, y si fuera muy pequeño, actores malicioses podrían infiltrarse en la red para sabotearla.
 <br><br>
@@ -137,41 +139,15 @@ He desarrollado una aplicación de escritorio para demostrar la funcionalidad pr
 </div>
 
 <div class="apartado">
-    <div class="vuelve">
-        <button class="vuelveButton" onclick="window.location.href='../index.html'">
+        <button class="vuelveButton" onclick="window.location.href='index.html'">
             Vuelve al inicio
         </button>
-    </div>
 </div>
 <div class="apartado"><br></div>
 
 </div>
 <script src="../js/particles.js"></script>
 <script src="../js/removeBanner.js"></script>
-<script>
-var counter = 1;
-document.head = document.head || document.getElementsByTagName("head")[0];
-
-function changeFavicon(src) {
-	var link = document.createElement("link");
-	var oldLink = document.getElementById("dynamic-favicon");
-	link.id = "dynamic-favicon";
-	link.href= src;
-	link.rel = "icon";
-	link.type = "image/x-icon";
-	document.head.removeChild(oldLink);
-	document.head.appendChild(link);
-}
-
-function changeCounter() {
-	if(counter === 9) counter = 1;
-	var newSrc = "../img/favicons/favicon" + counter + ".png";
-	changeFavicon(newSrc);
-	setTimeout(changeCounter, 300);
-	counter++;
-}
-
-changeCounter();
-</script>
+<script src="../js/dynamicFavicon.js"></script>
 </body>
 </html>

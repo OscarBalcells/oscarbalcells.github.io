@@ -1,0 +1,178 @@
+x<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>RedMedic</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../css/blog.css">
+  <link id="dynamic-favicon" rel="icon" type="image/x-icon" href="../img/favicons/favicon1.png">
+	<script src="../js/particlesScript.js"></script>
+  <link href="../css/montserrat.css" rel="stylesheet">
+  <link href="../css/cormorant.css" rel="stylesheet">
+</head>
+<body>
+	<div id="header">
+		<div style="margin-left:20px">
+			<a id="redmedic" href="index.html">RedMedic:</a>&nbsp
+			<span id="nombre">Ethereum & Smart Contracts</span>
+		</div>
+	</div>
+
+	<!--- Particles -->
+<div id="inicio"></div>
+<div id="content">
+<div style="height:10px;"></div>
+<div class="apartado">
+<h1>Ethereum</h1>
+Ethereum is a global, virtual supercomputer. Any person or machine in the world can rent Ethereum by paying a small fee at Ethers
+(the native cryptomone of Ethereum) in exchange for time to be able to use the computer. The programs that are uploaded and
+run in Ethereum, with the computing time you have available, are called Smart Contracts and in the next chapter I will try to
+ explain why a Smart Contract is not a simple piece of code that any computer can run and because it is a very important invention.
+<br></br>
+It's very important to understand very well the functionality that Ethereum offers. When someone says "I've used Ethereum" it's because they've
+done one of these three things:<br>
+I have sent money from my Ethereum account to another Ethereum <br> account.
+1. I have uploaded a Smart Contract to Ethereum that will stay there forever with the goal that someone or something can call it after <br>.
+2. I have made a call to an Ethereum Smart Contract to run <br>
+<br></br>
+To better explain what can be done with the Ethereum computer and the special properties it has, I'm going to use an analogy. I will compare Ethereum with Amazon Web Services (AWS), the world's largest web services platform. (Web Services = They rent you servers)
+<!-- PHOTO SERVER FARM -->
+<br></br>
+This explanation with analogy is a bit long as I first have to explain what AWS is. If you already know what AWS is and want to understand Ethereum once and for all, click here.
+</div>
+<div class="apartado">
+<h3>AWS</h3>
+If you've ever developed a website or web application, you probably know what this box here is.
+<br></br>
+<!-- BOX PHOTO -->
+If you don't know what it is, I'll explain very quickly. It's called a server. It is a computer, a little uglier than normal, that is almost always active running anything like, for example, the backend of a web page. Well, a long time ago, as I've been told, companies used to have many of these large boxes in their offices and used them to run their web applications, to save databases, make calculations and much more.
+<br></br>
+One day in 2006, a company you're sure to know called Amazon came up with a brilliant idea that would completely change the world of software development. They finally realized that having to keep your own metal boxes in the office in order to operate them locally was expensive, complex, heavy and boring. So they created Amazon Web Services, the foundation of what we know today as the cloud. Amazon Web Services (AWS) gives you the opportunity to outsource your entire server infrastructure. Today's people can, thanks to Amazon, program from our comfortable office and let all the hard computer work happen in some metal box on an Amazon server farm, which will make sure your box is at the ideal temperature, with electricity always and connected to the Internet so you can connect to it and use it.
+</div>
+<div class="apartado">
+<h3>What does this have to do with Ethereum? </h3>>
+Ethereum offers the same service as AWS with a small difference. In short and in practice it can be said that both AWS and Ethereum are servers that you rent over the Internet. The functionality is almost identical if we compare the two platforms. However, the way the two systems work is completely different.
+<br></br>
+How does AWS work?
+<br></br>
+You rent a server that will be some box out of the thousands on a server farm. They give you the cryptographic keys so you can talk to your server and control it remotely and that's it. Do you want to run a file on the server? You send it to him, he downloads it and runs it. The maintenance of the server is done by Amazon, which will see to it that the metal box you have rented is kept cool day and night, that the light does not go out and that it continues to work in perfect conditions. As long as you pay the rent, you can use your box. When you stop paying, Amazon changes your password and rents it to someone else.
+<br></br>
+How does Ethereum work? <br><br>
+Here I'm going to need more than one paragraph, so if you want to skip the boring and technical part about Blockchain, go ahead.
+<br></br>
+In Ethereum, as well as in Bitcoin, there are two types of participants or nodes in the network. Users and miners. (you can have both roles at the same time too). The user is the person or machine that wants to use Ethereum to upload his smart contract and that anyone can interact with it or to interact with an existing smart contract (I will explain this process better in the section on smart contracts). A user fills in the fields of a transaction, for example indicating that he wants to create a smart contract and attaching the smart contract code, signs this transaction and sends it to all the nodes he knows of Ethereum. These nodes also share this transaction with the nodes they know and so on.
+<br></br>
+The miners maintain the network and execute the smart contracts that the users send. While users pay ether to execute their smart contracts, miners execute these smart contracts in exchange for ether. Mining in Ethereum is a competition. It's a race against time between all the miners on the network to find the next block. What do you mean by a race? What exactly are the miners looking for? To understand this process you need a basic knowledge of cryptography, if you are not interested in cryptography, click here.
+<br></br>
+You're interested in cryptography. I assume you know a little so you'll probably understand that a good hash function is a trap function, which means that calculating the hash of "a" is easy while deducing that "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb" is the hash value of "a" is very dícifil. It would take millennia to get it out if you didn't guess. Well, when miners look like crazy the next block means they look for a valid nonza for the next block. A nonza is a random number that you add to the data of the block to get the hash out of the block. hash_of_the_block = funcion_hash(data_of_the_block + nonza). A valid nonza makes the block hash have a certain amount of zeros at the beginning of the hash. The amount of zeros at the beginning changes according to the difficulty required by the protocol. In the case of Bitcoin, every 2016 blocks the following difficulty is calculated using the average time required for each block in order to keep the average stable at 10 minutes per block. The more difficulty, the more zeros are needed at the beginning because there is a smaller valid range for the hash of the next block.
+<br></br>
+When a miner finds a block, something super complicated to do, what he wants is to guarantee that he will collect his reward. If this miner
+It risks that the rest of the network that has to accept its block in order for the miner to receive his reward, rejects the block and waits for another one to arrive. For this reason, there is a very strong incentive for the miners to follow the established protocol.
+<br></br>
+Each participant in the network keeps a copy with the blockchain. This copy is the current state of Ethereum. When a miner finds a new block and sends it, all network participants: both users and miners, update their blockchain status with the new block. If for example I command a smart contract signed by me that decrees that I sent 1 ETH to someone (what is known as a transaction), from now on, in the state of each network participant will be reflected that I have 1 ETH less in my account.
+
+There are other more complex questions about Ethereum that I will not address in this article but that might seem interesting to you as for example:
+
+1. How do you prevent a smart contract from running forever or exceeding the time paid by the user?
+2. How can a smart contract interact with information outside of Ethereum? (the oracle)
+3. Can a more efficient and secure consensus mechanism be implemented? (proof of stake)
+4. Are there other techniques to make Ethereum Blockchain more efficient? (Sidechains, Sharding..)
+5. Can private Smart Contracts be created that only a designated group of participants can see? (Enigma Network)
+
+Now that you understand the Ethereum system above, let's go to what really interests you: What is Ethereum for?
+
+</div>
+
+<div class="apartado">
+<h1>Smart Contracts </h1>
+An Ethereum Smart Contract is a normal and current code file, in other words, a smart contract are instructions for the computer to execute it. Here's a very simplified example of a SC:
+<br><br>
+The difference between a smart contract and a normal program is not the code itself (the instructions), but the way and the person executing the code.
+
+<br><br>
+
+As you know if you've come this far, it's impossible to change or delete smart contracts that are uploaded to Ethereum. This property is known as immutability. If the last miner who found the block tries to "hack" a smart contract by changing something, for example by editing a constant in the code so that the smart contract returns more money, the rest of the participants of the Ethereum network, when they receive the block, will see this change and if they follow the protocol, they will reject this miner's block, which will be without his precious reward.
+
+<br><br>
+
+In addition, the state of the blockchain for any participant that is fully synchronized with the block of the longest chain is the same, which means that a smart contract is executed in the same way and produces the same output for any participant that executes it. Smart contracts are for this reason deterministic.
+
+<br><br>
+
+These two properties are what make the functionality of a smart contract go beyond that of the software known until now. With a smart contract, not only is the need to trust the platform that executes it eliminated, but you can also establish contracts with other organizations or people without the need to trust them to fulfill their part of the contract and without the need for lawyers or judges. The impartial judge is called Ethereum and since he is decentralized, he won't let you modify the contract or delete it or do any other kind of trap. He's going to make you do it.
+
+<br><br>
+
+A Smart Contract is an autonomous and immutable contract (in software language instead of legal) that lives in Ethereum and can also interact with the real world.
+As Ethereum's motto says: The Code is Law.
+</div>
+
+<div class="apartado">
+	<h1>Example case</h1>
+
+	For you to see the potential of smart contracts almost in action I am going to show you a possible application of Ethereum. The crypto currencies are based on smart contracts (Bitcoin too),
+	and this makes possible a new business model for certain types of companies.
+	<br><br>
+	For this example I am going to create a false company. It will be called CryptoBay.
+	The business of CryptoBay is very similar to that of eBay.
+	It acts as an intermediary between buyers and sellers. The difference between my CryptoBay and eBay is amazing.
+	<br><br>
+	<b>CriptoBay charges 0 commissions for transactions that occur on the platform. Zero. </b>br>eBay instead charges a 10% commission on most items sold or auctioned on its platform.
+	and the truth is that he makes a lot of money with this simple business model.
+	<br><br>
+	And now you're probably wondering: How does CryptoBay make money then?
+	<br><br>
+	CryptoBay earns money because the platform it operates is based on a token, a crypto currency. I'm going to call the CryptoBay token BayToken.
+	BayToken is a specialized crypto currency as a medium of exchange and at the same time as a reward for the investment in CryptoBay.
+	<br><br>
+	These are the main features of BayToken:
+	<br><br>
+	1) An Initial Coin Offering is made to finance the project. Anyone in the world can participate and buy BayTokens.<br>
+	2) BayTokens is used to reward first market participants, as well as founders and first employees. <br>
+	3) The value of my company (CriptoBay), grows thanks to the growth of the value of BayToken, which occurs when the maximum number is matched.
+	possible from buyers with sellers, and not through commissions as eBay does.<br>
+	4) Employees, investors and platform users capture value by selling BayTokens in exchange for dollars/euros or other forms of money such as Bitcoin<br>.
+	<br><br>
+	In this business model, the value of the platform is captured by all those who create value within it, as any user of the platform is also a shareholder.
+	of the platform.
+	<br><br>
+	More details to keep in mind:
+	<br><br>
+	The price of any item within CryptoBay is linked to the price of BayToken in Euros. Therefore, if an item costs 10€ and a BayToken costs 10€, then
+	the item will cost 1 BayToken. If for example the price of a BayToken is reduced by 50% and now a BayToken is worth 5€, then that same item will cost 2 BayTokens.
+	This means that the price of the items within CryptoBay is independent of the value of the BayTokens.
+	<br><br>
+	The value of the BayToken increases as the volume of sales on the platform increases. The reason for this is that anyone who wants to use the platform must have
+	BayTokens, therefore the demand for tokens increases if there are more buyers. In case someone does not yet have BayTokens and wants to use the platform
+	for example, an automatic conversion from euros to Baytokens would be made. For example if something costs 10 euros on CryptoBay, you pay 10 euros plus thirty cents and you get the
+	equivalent to ten BayTokens that you will use to buy the 10€ item.
+	<br><br>
+	The fact that the token used on the CryptoBay platform is based on Smart Contracts is very important. Control over BayTokens is established in a smart contract
+	public, immutable and can be audited by anyone. Thus, the control over the creation of new BayTokens, I do not have it, but it has a smart
+	contract that can be trusted (since it is always executed in the same way). If I were the central bank of the BayTokens, I could defraud any investor in the world.
+	the platform for example by creating many BayTokens and selling them in the market to make me rich.
+	<br><br>
+	The advantages of this new business model are as follows:
+	<br><br>
+	1) All CryptoBay participants (employees, investors, sellers and buyers)
+	are motivated by only one thing: Create and maintain and grow the platform. More customer loyalty.<br>
+	2) Neither buyers nor sellers have to pay the high transaction fees. <br>
+	3) Both sellers and buyers on CryptoBay can participate in increasing the value of my company CryptoBay by collecting and maintaining BayTokens.<br>.
+	4) BayTokens are shares of CryptoBay and are liquid assets that can be purchased over the Internet or cashed out by trading on CryptoBay,
+	therefore you can invest in CryptoBay in a very simple way. It would not be necessary to resort to the bag to raise more money.<br>
+	</div>
+
+<div class="apartado">
+    <button class="vuelveButton" onclick="window.location.href='main.html'">
+    	Back to main blog
+    </button>
+</div>
+
+<div class="apartado"><br></div>
+
+</div> <!--Content Div-->
+<script src="../js/particles.js"></script>
+<script src="../js/removeBanner.js"></script>
+<script src="../js/dynamicFavicon.js"></script>
+</body>
+</html>

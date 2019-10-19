@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Redmedic</title>
+  <title>RedMedic</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="../css/blog.css">
   <link id="dynamic-favicon" rel="icon" type="image/x-icon" href="../img/favicons/favicon1.png">
@@ -12,9 +12,11 @@
 </head>
 <body>
 	<div id="header">
+		<div style="margin-left:20px">
 		<a id="redmedic" href="../index.html">RedMedic:</a>
-		&nbsp&nbsp
+		&nbsp
 		<span id="nombre">utilidad</span>
+	</div>
 	</div>
 
 	<!--- Particulas -->
@@ -26,7 +28,7 @@
 
 <h2>¿Para que sirve un sistema de gestión de datos médicos multiinstitucional?</h2>
 
-Es una buena pregunta. Si no sirviera para nada, RedMedic no tendría ninguna utlidad.
+Buena pregunta.
 <br><br>
 RedMedic es un sistema de gestión de datos médicos. Este sistema es un hub que facilita el intercambio de datos entre diferentes organizaciones o personas.
 <br><br>
@@ -48,20 +50,16 @@ No obstante, este sistema no es solo un avance para los proveedores de salud, si
 fármacos y tratamientos y analizar la eficacia de medicamentos que hay en el mercado.
 <br><br>
 El problema como he comentado antes es que no existe ninguna gran autopista por donde circulen todos los datos, con un mismo formato. RedMedic es aparte de un sistema de
-gestión, también una gran piscina de datos estandarizados. Es una fuente de información.
+gestión, también una gran piscina de datos estandarizados. Es una fuente de información para investigadores por ejemplo.
 <br><br>
 A día de hoy, los centros de investigación compran directamente a hospitales información anonomizada sobre sus pacientes. El hecho de que esta información esté
 anonimizada limita su potencial ya que quedan huecos en muchas historias por rellenar, y estos datos perdidos no se pueden recuperar.
-
-
 </div>
 
 <div class="apartado">
-    <div class="vuelve">
-        <button class="vuelveButton" onclick="window.location.href='../index.html'">
+        <button class="vuelveButton" onclick="window.location.href='index.html'">
             Vuelve al inicio
         </button>
-    </div>
 </div>
 
 <div class="apartado"><br></div>
@@ -69,30 +67,6 @@ anonimizada limita su potencial ya que quedan huecos en muchas historias por rel
 </div> <!--Content Div-->
 <script src="../js/particles.js"></script>
 <script src="../js/removeBanner.js"></script>
-<script>
-var counter = 1;
-document.head = document.head || document.getElementsByTagName("head")[0];
-
-function changeFavicon(src) {
-	var link = document.createElement("link");
-	var oldLink = document.getElementById("dynamic-favicon");
-	link.id = "dynamic-favicon";
-	link.href= src;
-	link.rel = "icon";
-	link.type = "image/x-icon";
-	document.head.removeChild(oldLink);
-	document.head.appendChild(link);
-}
-
-function changeCounter() {
-	if(counter === 9) counter = 1;
-	var newSrc = "../img/favicons/favicon" + counter + ".png";
-	changeFavicon(newSrc);
-	setTimeout(changeCounter, 300);
-	counter++;
-}
-
-changeCounter();
-</script>
+<script src="../js/dynamicFavicon.js"></script>
 </body>
 </html>

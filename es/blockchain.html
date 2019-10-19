@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Redmedic</title>
+  <title>RedMedic</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="../css/blog.css">
   <link id="dynamic-favicon" rel="icon" type="image/x-icon" href="../img/favicons/favicon1.png">
@@ -12,9 +12,10 @@
 </head>
 <body>
 	<div id="header">
-		<a id="redmedic" href="../index.html">RedMedic:</a>
-		&nbsp&nbsp
-		<span id="nombre">blockchain</span>
+		<div style="margin-left:20px">
+			<a id="redmedic" href="index.html">RedMedic:</a>&nbsp
+			<span id="nombre">blockchain</span>
+		</div>
 	</div>
 
 	<!--- Particulas -->
@@ -27,28 +28,29 @@
 
 Es una buena pregunta por dos razones. Primero, porque me da la oportunidad de argumentar porqué he construido RedMedic de la
 forma en la que lo he hecho y segundo para demostrar la aplicación real de la tecnología. Desde mi punto de vista, hay muchos proyectos
-tecnológicos, especialmente proyectos que implementan el Blockchain, que utilizan la tecnología no como el medio para poder desarrollar el
-proyecto sino como el fin en sí. En otras palabras, meten el Blockchain donde no hace falta meterlo para poder decir que usan el Blockchain.
+tecnológicos, especialmente proyectos que aplican el Blockchain, que ven la tecnología no como una posible herramienta para poder desarrollar el
+proyecto sino como la base del proyecto. En otras palabras, meten el Blockchain donde no hace falta meterlo para poder decir que usan el esta nueva tecnología
+lo que produce resultados subóptimos en cuanto al producto final.
 <br><br>
 El Blockchain se suele vender como la plataforma futurista que es más segura gracias a su descentralización. Un Blockchain como Ethereum, lo que te ofrece
 es una plataforma que gracias a su arquitectura, te asegura que siempre se seguirán las normas del protocolo. Tus Smart Contracts siempre se
-ejecutarán de forma transparente y justa, sin trampas.
+ejecutarán de forma transparente y justa, sin trampas. A este aspecto fundamental se le conoce como "Ejecución Abierta".
 <br><br>
 Pero lo cierto es que un Blockchain es tán seguro como válidos o verificables son los inputs que recibe.
 A un smart contract, si le das los inputs equivocados, te va a dar los outputs equivocados.
 Si montas un supply chain para plátanos basado en el Blockchain, y cada participante en la cadena puede mentir y decir que el
-plátano ha sido transportado a la temperatura
-ideal aunque no haya sido así, todo tu sofisticado montaje Blockchain es inútil.
+plátano ha sido transportado a la temperatura ideal aunque no haya sido así, todo tu sofisticado montaje Blockchain es inútil.
 <br><br>
-Lo que voy a intentar hacer en este artículo es demostrar que la tecnología Blockchain es la mejor solución para poder hacer lo siguiente:
-Crear un sistema multiinstitucional de gestión de datos médicos de pacientes.
+Lo que voy a intentar hacer en este artículo es demostrar que la tecnología Blockchain es una buena solución para crear un sistema de gestión de datos
+médicos multiinstitucional y seguro.
 <br><br>
-Te podría hablar sobre porque la descentralización de RedMedic crea un sistema auditable y abierto y muchás cosas más para convencerte de que el Blockchain es la solución, pero
-voy a intentar usar otro método. Este método lo tomo prestado de mis clases de matemáticas. Hay muchas formas de demostrar un teorema.
+El hecho de que sea multiinstitucional es un matiz muy importante a tener en cuenta. Significa que diferentes instituciones participan en el sistema.
+<br>
+Te podría hablar sobre porque la descentralización de RedMedic crea un sistema auditable y abierto y comparar analógicamente
+sistemas descentralizados como Ethereum o Bitcoin con RedMedic para convencerte de que el
+Blockchain es la solución, pero voy a intentar usar otro método. Este método lo tomo prestado de mis clases de mates. Hay muchas formas de demostrar algo.
 Una de ellas se llama prueba por contradicción. Para demostrar que A = B, demuestras el hecho de que A ≠ B es imposible.
-Voy a intentar montar un sistema de gestión de datos médicos de pacientes sin usar el blockchain y paso a paso verás que o es imposible de hacer
-o es peor que el sistema Blockchain original.
-
+Vamos entonces a intentar montar un sistema SIN Blockchain y ver donde falla.
 </div>
 
 <div class="apartado">
@@ -59,12 +61,12 @@ Una de ellas es la que usa Blockchain. Veamos las dos otras.
 <div class="apartado">
 <h2>RedMedic centralizado</h2>
 
-La primera opción es tener una base de datos centralizada, operada por la empresa RedMedic, donde se registran las firmas
+La primera opción es tener una base de datos centralizada, operada por la empresa "RedMedic", donde se registran las firmas
 digitales de cada paciente y cada guardián, y lo que puede ver o cambiar cada participante en la red.
 <br><br>
 Un guardián, al recibir una petición de datos, simplemente consultaría a la base de datos central los permisos de esa firma digital.
 <br><br>
-Un paciente, si quieiera modificar los permisos sobre quien puede ver su historia médica, simplemente se lo diría al nodo central, y este cambiaría
+Un paciente, si quisiera modificar los permisos sobre quien puede ver su historia médica, simplemente se lo diría al nodo central, y este cambiaría
 los permisos de la base de datos central.
 <br><br>
 Esta de momento parece una opción bastante viable. Miremos ahora las desventajas que tiene este sistema.
@@ -77,20 +79,29 @@ controlado por el BCE. El servidor central de (que debe estar formado por difere
 Mastercard tiene todo el poder en la red de pagos de la empresa. Aún así, la red funciona perfectamente y nunca se ha llegado a caer del todo. Que haya un nodo central no
 significa que sea un sistema inseguro, como nos demuestra Mastercard, porque se pueden añadir capas de seguridad.
 <br><br>
-Pero la razón por la cual un RedMedic con una arquitectura centralizada no puede existir no es directamente la seguridad.
+RedMedic podría entonces funcionar con una arquitectura centralizada. No es algo inviable. La infraestructura telemática alemana, una base de datos
+central gestionada por Arvato (una empresa subsidiaria de Bertelsmann) conecta todas las consultas y hospitales a través de hardware especializado al
+punto central, ubicado en Berlin. En un solo nodo de esta red, a la que pertenecen miles de proveedores de salud, residen TODOS los datos. Ejemplos como
+<a href="https://thehackernews.com/2018/01/healthcare-data-breach.html">el hackeo masivo de datos de más de la mitad de población de Noruega</a>,
+<a href="https://resources.infosecinstitute.com/category/healthcare-information-security/healthcare-attack-statistics-and-case-studies/case-study-health-insurer-anthem/#gref">
+la brecha de seguridad en los sistemas de la segunda mayor aseguradora de EEUU, con 80 millones de perfiles robados</a> o las
+<a href="https://www.healthcareitnews.com/news/labcorp-goes-down-after-network-breach-putting-millions-patient-records-risk">
+115 millones de historias médicas hackeadas del gigante norteamericano proveedor de pruebas médicas LabCorp</a> demuestran que hay que partir desde la base de
+que nada es seguro.
 <br><br>
-El problema es la confianza.
+RedMedic blinda la red no a través de la obscurización, es decir esconder el código, hacer que el funcionamiento del sistema sea
+más complejo y la estructura más opaca, sino que propone todo lo contrario.
+<br><br>
+La forma de asegurar el sistema es primero, repartiendo el potencial de riesgo entre todos los participantes. Los datos no están en un solo nodo,
+sino repartidos por todos los participantes. Si un hacker quiere robar todos los datos del sistema, tendrá que ir proveedor por proveedor hackeandolos a todos.
+La segunda manera es creando un sistema totalmente transparente, descentralizado y auditable. Las ejecuciones ocuren en un entorno público e inhackeable
+(el Blockchain) y esto resulta en la teoría y en muchas casos también la práctica, en un sistema más seguro.
 <br>
-En un RedMedic centralizado, cada proveedor de salud tendría que darle a una compañía externa, la compañía que controla la base de datos central, acceso a todos los datos de sus
-pacientes. Desde una perspectiva legal, esto es muy complicado.
+Por otro lado hay que tener en cuenta el problema regulatorio y legal que supone que una sola compañía tenga acceso a los datos de diferentes proveedores de
+salud que en muchos casos compiten entre sí.
 <br><br>
-Para que lo veas de otro modo te pondré un ejemplo. Imagínate a un emprendedor que quiere crear la super red social, que juntará Instagram, Twitter, Snapchat, Youtube... en
-una sola plataforma. La idea en sí no tiene mucho sentido, pero seguimos con el ejemplo. Para crear la super red social, necesita agregar todos los perfiles de cada
-persona de las distintas plataformas. Coge tus datos de Twitter, los de Insta, los de Snapchat, etc. y los junta todos para crear tu perfil en la SSN (Super Social Network).
-Para hacer esto necesita lógicamente los datos de la gente de las diferentes plataformas, así que llama a Facebook y les pide que porfavor le den acceso a todos los datos de
-sus usuarios (solo los usuarios que quieran usar la SSN claramente). ¿Qué crees que diría Facebook?
-<br><br>
-Aquí esta la contradicción que buscábamos
+Un sistema centralizado no es totalmente inviable, sino más inseguro (por lo que he explicado antes) y difícil de cordinar que la alternativa
+propuesta por RedMedic.
 </div>
 <div class="apartado">
 <h2>RedMedic a través del paciente</h2>
@@ -113,7 +124,7 @@ me meto en VendeTusDatosMedicos.com y empiezo a comprar historiales médicos.
 ¿Cómo se yo que este perfil que acabo de comprar es auténtico?
 <br><br>
 Puede ser que el vendedor simplemente se haya inventado unos datos y los haya puesto a la venta. No solo estoy tirando el dinero ya que la información que he comprado
-es inútil, sino que además estaría alterando los resultados del estudio.
+es inútil, sino que además estaría alterando de forma negativa a los resultados del estudio.
 <br><br>
 No obstante, hay una forma de solucionar este problema para poder crear mercados de datos. Simplemente, que un perfil médico esté firmado por un proveedor de salud de confianza.
 Cuando te descargues tus datos del portal del paciente del hospital, le pides que te haga una firma digital sobre los datos, y así la empresa farmacéutica podrá saber que se
@@ -135,40 +146,14 @@ Si se te ocurre alguna otra forma de crear un sistema como RedMedic sin Blockcha
 envíame un mail por favor balcells.oscar@gmail.com
 </div>
 <div class="apartado">
-    <div class="vuelve">
-        <button class="vuelveButton" onclick="window.location.href='../index.html'">
+        <button class="vuelveButton" onclick="window.location.href='index.html'">
             Vuelve al inicio
         </button>
-    </div>
 </div>
 <div class="apartado"><br></div>
 
 </div>
 <script src="../js/particles.js"></script>
-<script>
-var counter = 1;
-document.head = document.head || document.getElementsByTagName("head")[0];
-
-function changeFavicon(src) {
-	var link = document.createElement("link");
-	var oldLink = document.getElementById("dynamic-favicon");
-	link.id = "dynamic-favicon";
-	link.href= src;
-	link.rel = "icon";
-	link.type = "image/x-icon";
-	document.head.removeChild(oldLink);
-	document.head.appendChild(link);
-}
-
-function changeCounter() {
-	if(counter === 9) counter = 1;
-	var newSrc = "../img/favicons/favicon" + counter + ".png";
-	changeFavicon(newSrc);
-	setTimeout(changeCounter, 300);
-	counter++;
-}
-
-changeCounter();
-</script>
+<script src="../js/dynamicFavicon.js"></script>
 </body>
 </html>

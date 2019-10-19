@@ -14,6 +14,27 @@ canvas {
   z-index: 0;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #f57373;
+  border-radius: 2px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
+}
+
+
 #inicio {
   width: 100vw;
   height: 100vh;
@@ -27,14 +48,32 @@ canvas {
   overflow-x: hidden;
 }
 
+.bandera {
+	position: relative;
+	top: 95%;
+	width: 60px;
+	height: 60px;
+	margin: none;
+	cursor: pointer;
+	float: right;
+	z-index: 99999;
+	opacity: 0.85;
+}
+
+.bandera:hover {
+	opacity: 1.0;
+	transition: 1s;
+}
+
 #titulo h1 {
   font-family: 'Cormorant Garamond', 'Montserrat', serif;
 }
 
 #expli {
-  font-size: 40px;
+  font-size: 35px;
   color: red;
   padding: 0 0 25vh 0;
+	margin-top: -15px;
 }
 
 .row {
@@ -58,9 +97,36 @@ canvas {
 }
 
 .tabla {
-  height: 280px;
+  height: 340px;
   overflow: hidden;
 	border: 1px solid red;
+}
+
+.tabla:hover {
+	border: 2px solid red;
+}
+
+.tabla:hover > h2 {
+	text-decoration: underline;
+}
+
+.github {
+	cursor: pointer;
+	position: relative;
+	z-index: 9999;
+	width: 150px;
+	height: 82px;
+	margin-top: 20px;
+	opacity: 0.8;
+	border-radius: 4px;
+	box-shadow: 2px 2px 2px rgba(150, 150, 150, 0.8);
+	border: 2px solid rgba(80, 80, 80, 1.0);
+}
+
+.github:hover {
+	opacity: 1.0;
+	box-shadow: 4px 15px 20px rgba(10, 10, 10, 0.4);
+	transition: 1s;
 }
 
 .button {
@@ -125,4 +191,7 @@ canvas {
   #expli {
     font-size: 30px;
   }
+	.tabla {
+		height: 350px;
+	}
 }

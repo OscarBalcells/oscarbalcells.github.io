@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>RedMedic</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../css/blog.css">
+  <link id="dynamic-favicon" rel="icon" type="image/x-icon" href="../img/favicons/favicon1.png">
+	<script src="../js/particlesScript.js"></script>
+	<link href="../css/montserrat.css" rel="stylesheet">
+	<link href="../css/cormorant.css" rel="stylesheet">
+</head>
+<body>
+	<style>
+		.rowButtons {
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 40px;
+			margin-top: 10px;
+		}
+
+		#repoButton {
+			background-color: white;
+			color: black;
+			margin-right: 5px;
+			margin-left: 5px;
+			padding: 10px;
+			border: 1px solid black;
+		}
+
+		#inicioButton {
+			background-color: white;
+			color: black;
+			margin-right: 10px;
+			margin-left: 10px;
+			padding: 10px;
+			border: 1px solid red;
+		}
+
+		#repoButton:hover {
+			background-color: black;
+			color: white;
+		}
+		#inicioButton:hover {
+			background-color: red;
+			color: white;
+		}
+	</style>
+	<div id="header">
+		<div style="margin-left:20px">
+		<a id="redmedic" href="../index.html">RedMedic:</a>
+		&nbsp
+		<span id="nombre">Patient Interaction</span>
+	</div>
+	</div>
+
+	<!--- Particulas -->
+	<div id="inicio"></div>
+	<div id="content">
+<div style="height:10px;"></div>
+
+<div class="apartado">
+	The patient interacts with RedMedic through a desktop application. With this app you can perform the
+	following functions:
+	<br><br>
+	1) You can view your longitudinal medical history, sorted by categories, date of insertion, and filtered by the provider the particular
+	resource comes from.
+	<br><br>
+	2) You can regulate the access permissions to your data by modifying the categories that a certain address can access.
+	<br><br>
+	3) Consult the medical history, or a category thereof, of another user in the network to which you have permission to access.
+	<br><br>
+	4) Manage different profiles with different digital signatures and addresses associated to Ethereum. A mother can for example
+	manage not only her account, but also her child's through the same application by activating that profile in the profiles tab.
+	<br><br>
+	5) Generate a private key, which will be used to register a new user in the network.
+	<br><br>
+	This whole app has been programmed by Oscar Balcells, a student who is now in his first year of high school and loves designing & building complex projects
+	as well as writing autobiographies in third person. I am not an expert in security, cryptography or best-standard
+	programming practices. Keep this in mind, if you feel like looking at the application code in the GitHub repo <b>with the instructions</b>
+	I'm gonna leave you here. For any comment, send me an email at balcells.oscar@gmail.com.
+<br><br>
+</div>
+
+<div class="rowButtons">
+	<button id="repoButton" onclick="window.location.href='https://github.com/OscarBalcells/app-redmedic'">App's Repo</button>
+	<button id="inicioButton" onclick="window.location.href='index.html'">Back home</button>
+</div>
+
+<div class="apartado"><br></div>
+
+</div>
+<script src="../js/particles.js"></script>
+<script src="../js/removeBanner.js"></script>
+<script src="../dyamicFavicon.js"></script>
+</body>
+</html>
