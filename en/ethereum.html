@@ -6,23 +6,16 @@ x<!DOCTYPE html>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="../css/blog.css">
   <link id="dynamic-favicon" rel="icon" type="image/x-icon" href="../img/favicons/favicon1.png">
-	<script src="../js/particlesScript.js"></script>
   <link href="../css/montserrat.css" rel="stylesheet">
   <link href="../css/cormorant.css" rel="stylesheet">
 </head>
 <body>
 	<div id="header">
-		<div style="margin-left:20px">
-			<a id="redmedic" href="index.html">RedMedic:</a>&nbsp
-			<span id="nombre">Ethereum & Smart Contracts</span>
-		</div>
+		Ethereum & Smart Contracts
 	</div>
 
 	<!--- Particles -->
-<div id="inicio"></div>
 <div id="content">
-<div style="height:10px;"></div>
-<div class="apartado">
 <h1>Ethereum</h1>
 Ethereum is a global, virtual supercomputer. Any person or machine in the world can rent Ethereum by paying a small fee at Ethers
 (the native cryptomone of Ethereum) in exchange for time to be able to use the computer. The programs that are uploaded and
@@ -39,18 +32,14 @@ To better explain what can be done with the Ethereum computer and the special pr
 <!-- PHOTO SERVER FARM -->
 <br></br>
 This explanation with analogy is a bit long as I first have to explain what AWS is. If you already know what AWS is and want to understand Ethereum once and for all, click here.
-</div>
-<div class="apartado">
 <h3>AWS</h3>
 If you've ever developed a website or web application, you probably know what this box here is.
 <br></br>
 <!-- BOX PHOTO -->
 If you don't know what it is, I'll explain very quickly. It's called a server. It is a computer, a little uglier than normal, that is almost always active running anything like, for example, the backend of a web page. Well, a long time ago, as I've been told, companies used to have many of these large boxes in their offices and used them to run their web applications, to save databases, make calculations and much more.
 <br></br>
-One day in 2006, a company you're sure to know called Amazon came up with a brilliant idea that would completely change the world of software development. They finally realized that having to keep your own metal boxes in the office in order to operate them locally was expensive, complex, heavy and boring. So they created Amazon Web Services, the foundation of what we know today as the cloud. Amazon Web Services (AWS) gives you the opportunity to outsource your entire server infrastructure. Today's people can, thanks to Amazon, program from our comfortable office and let all the hard computer work happen in some metal box on an Amazon server farm, which will make sure your box is at the ideal temperature, with electricity always and connected to the Internet so you can connect to it and use it.
-</div>
-<div class="apartado">
-<h3>What does this have to do with Ethereum? </h3>>
+One day in 2006, a company you're sure to know called Amazon came up with a brilliant idea that would completely change the world of software development. They finally realized that having to keep your own metal boxes in the office in order to operate them locally was expensive, complex, heavy and boring. So they created Amazon Web Services, the foundation of what we know today as the cloud. Amazon Web Services (AWS) gives you the opportunity to outsource your entire server infrastructure. Today's people can, thanks to Amazon, program from our comfortable office and let all the hard computer work happen in some metal box on an Amazon server farm, which will make sure your box is at the ideal temperature, with electricity always and connected to the Internet so you can connect to it and use it.>
+<h3>What does this have to do with Ethereum? </h3>
 Ethereum offers the same service as AWS with a small difference. In short and in practice it can be said that both AWS and Ethereum are servers that you rent over the Internet. The functionality is almost identical if we compare the two platforms. However, the way the two systems work is completely different.
 <br></br>
 How does AWS work?
@@ -70,45 +59,32 @@ When a miner finds a block, something super complicated to do, what he wants is 
 It risks that the rest of the network that has to accept its block in order for the miner to receive his reward, rejects the block and waits for another one to arrive. For this reason, there is a very strong incentive for the miners to follow the established protocol.
 <br></br>
 Each participant in the network keeps a copy with the blockchain. This copy is the current state of Ethereum. When a miner finds a new block and sends it, all network participants: both users and miners, update their blockchain status with the new block. If for example I command a smart contract signed by me that decrees that I sent 1 ETH to someone (what is known as a transaction), from now on, in the state of each network participant will be reflected that I have 1 ETH less in my account.
-
+<br><br>
 There are other more complex questions about Ethereum that I will not address in this article but that might seem interesting to you as for example:
-
-1. How do you prevent a smart contract from running forever or exceeding the time paid by the user?
-2. How can a smart contract interact with information outside of Ethereum? (the oracle)
-3. Can a more efficient and secure consensus mechanism be implemented? (proof of stake)
-4. Are there other techniques to make Ethereum Blockchain more efficient? (Sidechains, Sharding..)
-5. Can private Smart Contracts be created that only a designated group of participants can see? (Enigma Network)
-
+<br><br>
+1. How do you prevent a smart contract from running forever or exceeding the time paid by the user?<br>
+2. How can a smart contract interact with information outside of Ethereum? (the oracle)<br>
+3. Can a more efficient and secure consensus mechanism be implemented? (proof of stake)<br>
+4. Are there other techniques to make Ethereum Blockchain more efficient? (Sidechains, Sharding..)<br>
+5. Can private Smart Contracts be created that only a designated group of participants can see? (Enigma Network)<br>
+<br><br>
 Now that you understand the Ethereum system above, let's go to what really interests you: What is Ethereum for?
-
-</div>
-
-<div class="apartado">
+<br><br>
 <h1>Smart Contracts </h1>
 An Ethereum Smart Contract is a normal and current code file, in other words, a smart contract are instructions for the computer to execute it. Here's a very simplified example of a SC:
 <br><br>
 The difference between a smart contract and a normal program is not the code itself (the instructions), but the way and the person executing the code.
-
 <br><br>
-
 As you know if you've come this far, it's impossible to change or delete smart contracts that are uploaded to Ethereum. This property is known as immutability. If the last miner who found the block tries to "hack" a smart contract by changing something, for example by editing a constant in the code so that the smart contract returns more money, the rest of the participants of the Ethereum network, when they receive the block, will see this change and if they follow the protocol, they will reject this miner's block, which will be without his precious reward.
-
 <br><br>
-
 In addition, the state of the blockchain for any participant that is fully synchronized with the block of the longest chain is the same, which means that a smart contract is executed in the same way and produces the same output for any participant that executes it. Smart contracts are for this reason deterministic.
-
 <br><br>
-
 These two properties are what make the functionality of a smart contract go beyond that of the software known until now. With a smart contract, not only is the need to trust the platform that executes it eliminated, but you can also establish contracts with other organizations or people without the need to trust them to fulfill their part of the contract and without the need for lawyers or judges. The impartial judge is called Ethereum and since he is decentralized, he won't let you modify the contract or delete it or do any other kind of trap. He's going to make you do it.
-
 <br><br>
-
 A Smart Contract is an autonomous and immutable contract (in software language instead of legal) that lives in Ethereum and can also interact with the real world.
 As Ethereum's motto says: The Code is Law.
 </div>
-
-<div class="apartado">
-	<h1>Example case</h1>
+<h3>Example case</h3>
 
 	For you to see the potential of smart contracts almost in action I am going to show you a possible application of Ethereum. The crypto currencies are based on smart contracts (Bitcoin too),
 	and this makes possible a new business model for certain types of companies.
@@ -160,15 +136,11 @@ As Ethereum's motto says: The Code is Law.
 	3) Both sellers and buyers on CryptoBay can participate in increasing the value of my company CryptoBay by collecting and maintaining BayTokens.<br>.
 	4) BayTokens are shares of CryptoBay and are liquid assets that can be purchased over the Internet or cashed out by trading on CryptoBay,
 	therefore you can invest in CryptoBay in a very simple way. It would not be necessary to resort to the bag to raise more money.<br>
-	</div>
-
-<div class="apartado">
+<br><br>
     <button class="vuelveButton" onclick="window.location.href='main.html'">
     	Back to main blog
     </button>
-</div>
-
-<div class="apartado"><br></div>
+<br><br>
 
 </div> <!--Content Div-->
 <script src="../js/particles.js"></script>

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+e<!DOCTYPE html>
 <html>
 <head>
   <meta charset="UTF-8">
@@ -22,9 +22,6 @@
 	<!--- Particulas -->
 	<div id="inicio"></div>
 	<div id="content">
-<div style="height:10px;"></div>
-
-<div class="apartado">
 In this article I'm going to explain exactly what RedMedic is from a technical and functional point of view.
 <br><br>
 RedMedic is a decentralized application found in Ethereum's Blockchain.
@@ -37,8 +34,7 @@ If you don't know what a decentralized application is or you don't understand ve
 1) <a href="https://youtu.be/SSo_EIwHSd4">How does a Blockchain work in 6 minutes by SimplyExplained</a><br>
 2) <a href="ethereum.html">Ethereum and Smart Contracts by Oscar Balcells </a><br>
 3) <a href="https://ethereum.github.io/yellowpaper/paper.pdf">Yellowpaper by Gavin Wood and Vitalik Buterin </a><br>
-</div>
-<div class="apartado">
+
 <h2>Decentralized health data hub</h2>
 Well, for starters, I think the most important thing understanding exactly what a decentralized health data hub is.
 <br><br>
@@ -92,8 +88,7 @@ And third, because the fact that the data is guarded by a hospital validates and
 Decentralized? What for?
 <br><br>
 I've written an article just about this. <a href="blockchain.html">Here</a> I leave it to you.
-</div>
-<div class="apartado">
+
 <h2>Application architecture </h2>
 A decentralized application like RedMedic is composed of different Smart Contracts that have different functionalities and a decentralized frontend (you are not subordinated by a web client).
 Let's start by reviewing the list of participants in RedMedic to see how each one interacts with the application.
@@ -121,11 +116,9 @@ A guardian guards the profiles of his patients, the data that has been generated
 The guardian's database is synchronized with the health care provider's local database. If the patient visits the center and for example an allergy is detected, the doctor will update the center's database and therefore the database linked to RedMedic will also be updated.
 <br><br>
 <h2>Mining </h2>
-
 Right now, RedMedic resides in Ethereum's Blockchain. Which means that the miners in RedMedic, the ones who maintain the Blockchain, find new blocks and execute the smart contracts, are the same miners as Ethereum. However, a possible option to lower costs within the platform would be to clone Ethereum and have an independent blockchain. In this Blockchain a custom consensus protocol could be established for the platform. The most viable option for this protocol would be Proof of Authority, which very briefly means that the miners are the same guardians, who are authorities because they have had to be approved to enter.
 <br><br>
 <h2>Smart Contracts </h2>
-
 This is the important part. It's the gears that make the machine work, the logic of the system. What types of smart contracts are there in RedMedic and what is each one used for?
 <br><br>
 1) Guardian Registration Act
@@ -145,17 +138,11 @@ Here's a diagram that describes everything very well.
 When you want to expand the functionality of RedMedic, you simply create new types of smart contracts.
 <br><br>
 <h2>Desktop application </h2>
-
 I developed a desktop application to demonstrate the core functionality of RedMedic. In this desktop app, a patient can view their master profile, which offers a unique and organized digital profile. You can also control the permissions for each of the partial profiles you have. For example, you can let the digital signature X see a certain field of a relationship you have with a provider.
 </div>
-
-<div class="apartado">
-        <button class="vuelveButton" onclick="window.location.href='index.html'">
-            Back home
-        </button>
-</div>
-<div class="apartado"><br></div>
-
+<button class="vuelveButton" onclick="window.location.href='index.html'">
+		Back home
+</button>
 </div>
 <script src="../js/particles.js"></script>
 <script src="../js/removeBanner.js"></script>

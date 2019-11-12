@@ -9,22 +9,33 @@
   <script src="../js/particlesScript.js"></script>
   <link href="../css/montserrat.css" rel="stylesheet">
   <link href="../css/cormorant.css" rel="stylesheet">
+	<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
-	<img class="bandera" style="right:18px;" onclick="window.location='../es/index.html'" src="../img/spain.png">
-	<img class="bandera" style="left:-35px;" onclick="window.location='../en/index.html'" src="../img/usa.png">
   <div id="inicio">
     <div id="titulo"><h1>RedMedic</h1></div>
-    <div id="expli"><h2></h2><img onclick="window.location='https://github.com/OscarBalcells/app-redmedic'" class="github" src="../img/github-logo.jpg"></div>
+		<div id="expli">Die Blockchain zur Verwaltung von Zugriffen auf Gesundheitsdaten durch den Patienten selbst</div>
+    <div id="images">
+			<span class="image-span" style="left:8%"><img class="image" src="../img/search.png"></span>
+			<span class="image-span" style="left:20%;z-index:999;width:64vw;margin-top:-20px"><img class="image" src="../img/history.png"></span>
+			<span class="image-span" style="left:32%"><img class="image" src="../img/permissions.png"></span>
+		</div>
   </div>
 	<script src="../js/particles.js"></script>
 
-	<div class="row">
+	<div data-aos="fade-zoom-in"
+	     data-aos-easing="ease-in-back"
+	     data-aos-delay="300"
+	     data-aos-offset="0">
+	</div>
+
+	<div data-aos="fade-zoom-in" data-aos-duration="1000" data-aos-offset="0" class="row">
 		<script>var lang = "de"</script>
 		<img width="70px" height="70px" style="margin-bottom:30px" src="../img/power.png">
-		<h1 id="poder">Die Macht deiner Gesundheitsdaten</h1>
-    <p style="padding-top:1vw;width:80%;margin:auto;margin-bottom:50px;align:center;font-size:25px">
+		<p style="font-size:30px">Die Macht deiner Gesundheitsdaten</p>
+		<p id="poder">&nbsp</p>
+    <p style="padding-top:1vw;width:86%;margin:auto;margin-bottom:50px;align:center;font-size:20px">
 			Daten sind das Gold des 21. Jahrhunderts. Von der Verbesserung und Personalisierung von Behandlungen, Forschung und Entwicklung neuer Medikamente bis hin zur Kosteneinsparung.
 			<a style="color:white" href="https://jamanetwork.com/journals/jama/fullarticle/2752664">Hunderte von Milliarden Dollar pro Jahr
 			bei Kostenüberschreitungen </a> im Gesundheitswesen. Die Verbesserung der Kontrolle und Verwendung Ihrer medizinischen Daten kann außerordentliche Vorteile für Sie, den Patienten und das gesamte Ökosystem bringen.
@@ -41,7 +52,7 @@
 
   <div class="row" style="background-color:#fff;color:#E60026;width:84%;margin:auto;">
     <h1 style="padding-bottom:20px;">Vorteile</h1>
-    <div class="column table">
+    <div data-aos="fade-right" class="column table">
       <img src="../img/accesibilidad.png" style="width:40px;height:40px;margin-bottom:5px;">
       <h2 style="margin-bottom:10px;">Zugänglichkeit </h2>
       <p>
@@ -52,7 +63,7 @@
 				Kategorien.
       </p>
     </div>
-    <div class="column table">
+    <div data-aos="fade-down" class="column table">
       <img src="../img/interoperabilidad.png" style="width:40px;height:40px;margin-bottom:5px;">
       <h2 style="margin-bottom:10px;">Interoperabilität</h2>
       <p>
@@ -63,7 +74,7 @@
 				jeden Lieferanten hat.
       </p>
     </div>
-    <div class="column table" id="lastTable">
+    <div data-aos="fade-left" class="column table">
       <img src="../img/seguridad.png" style="width:40px;height:40px;margin-bottom:5px;">
       <h2 style="margin-bottom:10px;">Sicherheit </h2>
       <p>
@@ -77,26 +88,34 @@
   </div>
 
 	<div class="row">
-		<div class="column" id="tercero">
+		<div data-aos="flip-right" class="column" id="tercero">
       <h2 style="margin-bottom:40px;">Wofür wird ein medizinisches Datenmanagementsystem verwendet? </h2>
       <a class="button" href="./uses.html">Lesen Sie mehr</a>
     </div>
-    <div class="column">
+    <div data-aos="flip-up" class="column">
       <h2 style="margin-bottom:40px;">Warum wird hier die Blockchain-Technologie eingesetzt? </h2>
       <a class="button" href="./blockchain.html">Lesen Sie mehr</a>
     </div>
-    <div class="column">
+    <div data-aos="flip-left" class="column">
       <h2 style="margin-bottom:40px;">Wie interagiert der Patient mit Redmedic? </h2>
       <a class="button" href="./interaction.html">Lesen Sie mehr</a>
     </div>
   </div>
 
   <div class="row" style="background-color:#fff">
-    <h2 style="color:#E60026;">balcells.oscar@gmail.com</h2>
+		<img onclick="window.location='https://github.com/OscarBalcells/app-redmedic'" class="github" src="../img/github-logo.png">
+    <h2>
+			<a style="color:#E60026" href="github.com/oscarbalcells">github.com/oscarbalcells</a>
+		</h2>
+		<!--<h4 style="color:#E60026;display:inline-block;margin-bottom:17.5px;">Sprache ändern:</h4>
+		<img class="bandera" onclick="window.location='../es/index.html'" src="../img/spain.png">
+		<img class="bandera" onclick="window.location='../en/index.html'" src="../img/usa.png">-->
 		<p style="color:#E60026;margin-top:5px;font-size:12px;">Betrieben von 000webhost. Dieser Hosting-Service sammelt einige Cookies, um den Traffic auf der Website zu analysieren.
     <p style="color:#E60026;margin-top:5px;font-size:12px;">Copyright &copy; 2020 Oscar Balcells Obeso</p>
   </div>
 
+	<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+	<script>AOS.init()</script>
 	<script src="../js/removeBanner.js"></script>
 	<script src="../js/dynamicFavicon.js"></script>
 	<script src="../js/dynamicPoder.js"></script>

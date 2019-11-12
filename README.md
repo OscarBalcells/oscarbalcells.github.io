@@ -5,4 +5,4 @@ Aquí te dejo una screenshot de la web.
 
 ![Screen Shot](https://github.com/OscarBalcells/app-redmedic/blob/master/assets/screenshot.png)
 
-RedMedic es mi proyecto de Investigación (BLL) de 1º de bachillerato para el Colegio Alemán de Barcelona.
+RedMedic es mi proyecto de Investigación (BLL) de 2º de bachillerato para el Colegio Alemán de Barcelona.

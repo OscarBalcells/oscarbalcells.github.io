@@ -11,60 +11,50 @@
   <link href="../css/cormorant.css" rel="stylesheet">
 </head>
 <body>
-	<div id="header">
-		<div style="margin-left:20px">
-		<a id="redmedic" href="../index.html">RedMedic:</a>
-		&nbsp
-		<span id="nombre">Nützlichkeit</span>
-	</div>
-	</div>
-
-	<!--- Particulas -->
-<div id="inicio"></div>
 <div id="content">
-<div style="height:10px;"></div>
-
-<div class="apartado">
-
-<h2>Was ist eine multi-institutionelle Datendrehscheibe für Gesundheitsdaten? </h2>
-
-Gute Frage.
-<br><br>
+<h1>Was ist eine multi-institutionelle Gesundheitsdaten Managementplatform?</h1>
 RedMedic ist ein System, das als Drehscheibe fungiert, die den Datenaustausch zwischen verschiedenen Organisationen oder Personen erleichtert.
 <br><br>
-Das Verschieben von medizinischen Daten aus der Datenbank eines Unternehmens in eine andere Person oder Organisation ist aus verschiedenen Gründen kompliziert.
+Das Verschieben von medizinischen Daten aus der Datenbank eines Unternehmens in eine andere Person oder Organisation ist aus verschiedenen Gründen kompliziert oder unerwünscht.
 <br><br>
-Der erste Grund ist der Mangel an Standards in der Branche. Einige EHR-Anbieter halten sich nicht an die Standards und erstellen ihre eigenen.
-individuelle Formate, die perfekt zu ihren Zielen passen. Es gibt verschiedene Normen und innerhalb dieser Normen gibt es unterschiedliche Normen.
-Versionen, wie wir von HL7 2.0 und 3.0 sehen können.
+<h4>Mangel an Standards in der Branche</h4>
+Die bekannteste und am häufigsten verwendeten Datenstandards sind die der privaten Organisation Health Level 7 mit hl7 v2 als dem am häufigsten verwendeten System, aber gleichzeitig veraltet, und dem FHIR als der letzten und vielversprechenden Entwicklung, die alle möglichen Funktionalitäten des Sektors umfasst.
 <br><br>
-Der zweite Grund ist die Komplexität der medizinischen Daten. Jedes System verwendet seine eigene Nomenklatur, die Dinge werden in verschiedenen Einheiten gemessen, es gibt viele Textfelder. Dies
-erschwert das Verständnis der Daten.
+<h4>Komplexität der medizinischen Daten</h4>
+Die verschiedene Systeme verwenden seine eigene Nomenklaturen und Einheiten und es gibt viele Textfelder anstatt spezifische Bereiche. Außerdem sind die Daten sehr komplex.
 <br><br>
-Ein medizinisches Datenmanagementsystem wie RedMedic fördert einen einheitlichen Standard, mit dem jeder kommunizieren kann. Darüber hinaus sind die Transaktionen innerhalb des Systems automatisch. Nicht mehr
-Dazwischen gibt es Politik, nur Computer, die viel effizienter sind.
+RedMedic basiert auf dem modernsten Standard Argonaut FHIR, der für moderne Technologie-Anwendungen wie REST APIs angepasst ist, damit jeder mit jedem kommunizieren kann. Darüber hinaus sind die Transaktionen innerhalb des Systems automatisch.
 <br><br>
-Abschließend lässt sich sagen, dass ein multi-institutionelles medizinisches Datenmanagementsystem eine Kommunikationsschicht für die verschiedenen Organisationen schafft, die in vielen Fällen nicht die einzigen sind, die miteinander kommunizieren können.
-Manchmal müssen sie miteinander reden.
+Damit bildet ein multi-institutionelles medizinisches Datenmanagementsystem eine Kommunikationsschicht für die verschiedenen Organisationen und Menschen schafft.
 <br><br>
-Dieses System ist jedoch nicht nur ein Durchbruch für Gesundheitsdienstleister, sondern auch für die vielen Forscher, die viele Daten benötigen, um neue zu entwickeln.
-und Behandlungen und analysieren die Wirksamkeit von Medikamenten auf dem Markt.
+Dieses System ist jedoch nicht nur ein Durchbruch für Gesundheitsdienstleister, sondern auch für die vielen Forscher, die viele Daten benötigen, um neue Medikamente zu entwickeln, Patienten mit bestimmten Profilen suchen oder die Wirksamkeit von existierenden Therapien oder Medikamente auf dem Markt analysieren wollen.
 <br><br>
-Das Problem, wie ich bereits erwähnt habe, ist, dass es keinen großen Hub gibt, in dem alle Daten im gleichen Format zirkulieren. RedMedic ist abgesehen von einem System von
-Management, auch ein großer Pool an standardisierten Daten. Es ist eine Informationsquelle, z.B. für Forscher.
+RedMedic ist somit auch ein großer Pool an standardisierten Daten. Es ist eine Informationsquelle, z.B für Forscher.
 <br><br>
-Heute kaufen Forschungszentren anonymisierte Informationen über ihre Patienten direkt aus den Krankenhäusern. Die Tatsache, dass es sich bei diesen Informationen um Informationen handelt.
-anonymisierte Daten schränken auch ihr Potenzial ein, da es in vielen zu füllenden Geschichten Lücken gibt und diese verlorenen Daten nicht wiederhergestellt werden können.
-</div>
-
-<div class="apartado">
-        <button class="vuelveButton" onclick="window.location.href='index.html'">
-            Back home
-        </button>
-</div>
-
-<div class="apartado"><br></div>
-
+Heute kaufen Forschungszentren anonymisierte Informationen über ihre Patienten direkt von den großen Krankenhaus-Konzernen. Die Tatsache, dass es sich bei diesen Informationen um Informationen handelt. anonymisierte Daten schränken auch ihr Potenzial ein, da es in vielen zu füllenden Geschichten Lücken gibt und diese verlorenen Daten nicht wiederhergestellt werden können. Außerdem bekommt der Patient in dem existierenden Modell keinen Anteil an den Gewinne, die seine Daten ermöglichen. Der Patient kann mit RedMedic seine Daten den Forschern in anonymisierte Form zur Verfügung stellen oder verkaufen.
+<br><br>
+<h3>Interaktion mit dem System</h3>
+Der Patient interagiert mit RedMedic über eine Desktop-Anwendung. Mit dieser App hat man die folgende Funktionen:
+<br><br>
+1) Sie können Ihre Gesundheitsdaten einsehen, nach Kategorien, Einfügungsdatum und nach dem Anbieter des Resourcen gefiltert.
+2) Sie können die Zugriffsberechtigungen auf Ihre Daten regeln, indem Sie die Kategorien ändern, auf die eine bestimmte Adresse zugreifen kann.
+3) Konsultieren Sie die Krankengeschichte oder eine Kategorie davon eines anderen Benutzers im Netzwerk, auf den Sie Zugriff haben (z.B ihre Kinder oder Eltern)
+4) Verwalten Sie verschiedene Profile mit unterschiedlichen digitalen Signaturen und Adressen, die Ethereum zugeordnet sind. Eine Mutter kann zum Beispiel nicht nur ihr Konto, sondern auch das ihres Kindes über dieselbe Anwendung verwalten, indem Sie dieses Profil auf der Registerkarte Profile aktivieren.
+5) Erzeugen Sie einen privaten Schlüssel, mit dem ein neuer Benutzer im Netzwerk registriert wird.
+<br><br>
+<h4>Warum eine Desktop-App?</h4>
+Es ist eine sicherere und transparentere Art der Informationsübermittlung als über eine Web-App und gewährleistet zudem die Dezentralisierung.
+In der RedMedic App können Sie den gesamten ausgeführten Code anzeigen und bearbeiten. Nicht alle Anwender verfügen über die technologischen Möglichkeiten dazu, aber es trotzdem ist noch eine weitere Garantie geboten.
+<br><br>
+Webanwendungen hingegen führen den größten Teil ihres Codes serverseitig aus, wenn es um intensive Aufgaben geht, für die es keine reinen client-seitigen JavaScript-Bibliotheken gibt. Und wenn die Informationen auf der Serverseite laufen, hat der Benutzer keine volle Kontrolle über sie, so dass er nicht weiß, was wirklich mit seinen Daten los ist.
+Andererseits, was nützt es, ein ganzes dezentrales System mit verschiedenen Datenbanken zu haben, um die Macht des Netzwerks zu teilen, wenn der einzige Weg, auf das System zuzugreifen, über ein einziges Web ist, das von einer Einheit oder Person kontrolliert wird?
+<br><br>
+Die mögliche Entwicklung, die ich für RedMedic voraussehe, ist die Entwicklung der mobilen App und die Entwicklung der Webanwendung über das dezentrale Swarm-Protokoll von Ethereum. Dieses Protokoll ist eine Erweiterung der Funktionalität von Ethereum. Nicht nur die Logik des Systems muss dezentralisiert werden, sondern auch die Ausführung und Speicherung der App selbst. Dies wird nicht nur das System transparenter machen, sondern wahrscheinlich auch billiger und einfacher zu bedienen sein.
+<br><br>
+<button class="vuelveButton" onclick="window.location.href='index.html'">
+    Zurück
+</button>
+<br><br>
 </div> <!--Content Div-->
 <script src="../js/particles.js"></script>
 <script src="../js/removeBanner.js"></script>

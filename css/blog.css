@@ -1,63 +1,43 @@
 body {
-	box-sizing: border-box;
+  box-sizing: border-box;
   font-family: "Montserrat", serif;
   margin: 0;
   border: 0;
   overflow-x: hidden;
 }
 
-#header {
-	background-color: white;
-	margin-top: 0;
-	position: fixed;
-	top: 0;
-	width: 100%;
-	box-shadow: 0 5px 5px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-	z-index: 1;
+::-webkit-scrollbar {
+  width: 10px;
 }
 
-
-#redmedic {
-	color: #E60026;
-	font-size: 60px;
-	font-family: "Cormorant Garamond", "Montserrat";
-	margin-left: 10px;
-	font-weight: bold;
-	text-decoration: none;
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
 }
 
-#nombre {
-	color: #E60026;
-	font-size: 40px;
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #f57373;
+  border-radius: 2px;
 }
 
-canvas {
-  display: block;
-  position: absolute;
-  top: 50;
-  left: 0;
-  z-index: 0;
-}
-
-#inicio {
-	width: 100vw;
-	height: 100vh;
-	background-color: white;
-	position: fixed;
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
 }
 
 #content {
-	position: relative;
-	width: 80vw;
+	width: 50vw;
 	margin: auto;
 	background-color: white;
-	top: 100px;
-	box-shadow: 5px 5px 5px rgba(0,0,0,0.25), 0 1px 2px rgba(0,0,0,0.50);
 }
 
-.apartado {
-	margin: 30px 5% 10px 5%;
-	margin: auto,
+h1, h2, h3, h4 {
+    color: red;
+}
+
+.image {
+	max-width: 90vw;
 }
 
 .vuelveButton {
@@ -66,11 +46,11 @@ canvas {
     border:2px solid rgb(200, 0, 0, 0.8);
 		color: rgb(200, 0, 0, 0.8);
     margin:none;
-    padding:15px 30px;
+    padding:10px 20px;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;"
 		font-family: Roboto, sans;
-		font-size: 20px;
+		font-size: 15px;
 }
 
 .vuelveButton:hover {
@@ -78,17 +58,10 @@ canvas {
     color: white;
 }
 
+@media screen and (max-width:800px) { #content { font-size: 20px; } }
 @media screen and (max-width:700px) {
-	#content {
-		top: 150px;
-		width: 100vw;
-	}
-}
-
-@media screen and (max-width:400px) {
-	#content {
-		top: 200px;
-		font-size: 12px;
-		width: 100vw;
-	}
-}
+#content { font-size: 17px; width:93vw; margin-left: 10px; margin-right: 10px;}
+#header { font-size: 30px; margin-left: 10px; margin-right: 10px; } }
+@media screen and (max-width:600px) { #content { font-size: 16px; } }
+@media screen and (max-width:500px) { #content { font-size: 13px; }  #header { font-size:20px }}
+@media screen and (max-width:400px) { #content { font-size: 12px; } }
