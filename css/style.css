@@ -38,11 +38,11 @@ canvas {
 #inicio {
   width: 100vw;
   text-align: center;
-  height: 1050px;
+  height: 900px;
 }
 
 #titulo {
-	margin-top: 40px;
+  margin-top: 40px;
   font-size: 60px;
   color: red;
   overflow-x: hidden;
