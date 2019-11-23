@@ -38,7 +38,7 @@ canvas {
 #inicio {
   width: 100vw;
   text-align: center;
-	height: 900px;
+  height: 1050px;
 }
 
 #titulo {
@@ -69,9 +69,9 @@ canvas {
 #expli {
   font-size: 25px;
   color: red;
-	width: 70%;
-	margin: auto;
-	margin-top: 20px;
+  width: 70%;
+  margin: auto;
+  margin-top: 20px;
 }
 
 #poder {
