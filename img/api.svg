@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?> <!-- Created with Vectornator for iOS (http://vectornator.io/) --><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1" viewBox="0 0 1134 1134">
+<metadata>
+<vectornator:setting key="DisplayWhiteBackground" value="1"/>
+<vectornator:setting key="RulersVisible" value="1"/>
+<vectornator:setting key="SnapToEdges" value="0"/>
+<vectornator:setting key="Units" value="Millimeters"/>
+<vectornator:setting key="DynamicGuides" value="1"/>
+<vectornator:setting key="SnapToPoints" value="1"/>
+<vectornator:setting key="idAngle" value="30"/>
+<vectornator:setting key="SnapToGrid" value="1"/>
+<vectornator:setting key="SnapToGuides" value="0"/>
+<vectornator:setting key="GridSpacing" value="141.75"/>
+</metadata>
+<defs/>
+<g id="Cuadrado" vectornator:layerName="Cuadrado">
+<path stroke="#000000" stroke-width="1" d="M675.175+177.187L1104.83+425.25L1104.83+992.25L675.175+1240.31L245.518+992.25L245.518+425.25L675.175+177.187Z" fill="none" stroke-linecap="round" opacity="0" stroke-linejoin="bevel"/>
+<path stroke="#000000" stroke-width="1" d="M675.175+673.312L245.518+425.25L675.175+177.187L1103.02+424.206L675.175+673.312Z" fill="none" stroke-linecap="round" opacity="0" stroke-linejoin="bevel"/>
+</g>
+<g id="Rojo Intenso" vectornator:layerName="Rojo Intenso">
+<g opacity="1">
+<path d="M137.343+283.5L321.594+177.123L382.861+212.625L199.924+319.631L137.343+283.5Z" fill-opacity="0.4375" fill="#ff0000" opacity="1"/>
+<path d="M382.861+283.5L505.62+354.375L689.759+248.063L567+177.188L505.62+212.625L567+248.063L505.62+283.5L444.241+248.063L382.861+283.5Z" fill-opacity="0.4375" fill="#ff0000" opacity="1"/>
+<path d="M689.759+177.188L751.139+141.75L874.028+212.7L812.518+248.063L689.759+177.188Z" fill-opacity="0.4375" fill="#ff0000" opacity="1"/>
+<path d="M137.343+354.375L260.102+425.25L260.102+567L198.723+531.562L198.723+460.688L137.343+425.031L137.343+354.375Z" fill-opacity="0.4375" fill="#ff0000" opacity="1"/>
+<path d="M321.482+460.688L321.482+673.312L444.241+744.187L444.241+673.312L382.861+637.875L382.861+496.125L321.482+460.688Z" fill-opacity="0.4375" fill="#ff0000" opacity="1"/>
+<path d="M137.343+785.797L260.102+850.5L257.063+919.62L137.343+850.5L137.343+785.797Z" fill-opacity="0.4375" fill="#ff0000" opacity="1"/>
+<path d="M444.241+815.062L444.241+885.937L505.62+921.375L567+956.812L567+815.062L505.62+779.625L505.62+850.5L444.241+815.062Z" fill-opacity="0.4375" fill="#ff0000" opacity="1"/>
+<path d="M567+531.562L567+744.187L628.38+708.75L628.38+567L689.759+531.562L689.759+460.688L567+531.562Z" fill-opacity="0.4375" fill="#ff0000" opacity="1"/>
+<path d="M689.759+673.312L689.759+744.187L812.518+673.312L812.518+460.688L751.139+496.125L751.139+637.875L689.759+673.312Z" fill-opacity="0.4375" fill="#ff0000" opacity="1"/>
+<path d="M873.801+921.431L935.277+885.937L935.277+815.062L996.657+780.976L996.657+709.363L873.898+779.625L873.801+921.431Z" fill-opacity="0.4375" fill="#ff0000" opacity="1"/>
+<path d="M996.657+354.375L873.898+425.25L873.898+567L935.277+531.562L935.277+460.688L996.657+425.25L996.657+354.375Z" fill-opacity="0.4375" fill="#ff0000" opacity="1"/>
+<path d="M381.665+142.441L567+35.4375L693.087+108.23L628.38+141.75L567+106.313L444.241+177.188L381.665+142.441Z" opacity="1" fill="#ff0000"/>
+<path d="M689.759+318.938L811.992+388.921L996.657+283.5L933.142+246.83L812.518+318.938L751.139+283.5L689.759+318.938Z" opacity="1" fill="#ff0000"/>
+<path d="M321.965+318.938L506.104+425.25L628.863+354.375L689.759+389.195L506.104+496.125L261.777+355.063L321.965+318.938Z" opacity="1" fill="#ff0000"/>
+<path d="M260.102+637.875L137.343+567L137.343+708.75L198.723+744.187L198.723+673.312L260.102+708.75L260.102+637.875Z" opacity="1" fill="#ff0000"/>
+<path d="M382.861+850.5L321.482+815.062L321.482+956.812L567+1098.56L567+1027.69L382.861+921.375L382.861+850.5Z" opacity="1" fill="#ff0000"/>
+<path d="M628.38+850.5L689.759+815.062L689.759+956.812L751.139+921.375L751.139+850.5L812.518+815.062L812.518+956.812L628.38+1063.12L628.38+850.5Z" opacity="1" fill="#ff0000"/>
+<path d="M873.898+637.875L873.898+708.75L996.657+637.875L996.657+567L873.898+637.875Z" opacity="1" fill="#ff0000"/>
+<path d="M444.241+531.562L444.241+602.438L505.62+637.875L505.62+567L444.241+531.562Z" opacity="1" fill="#ff0000"/>
+</g>
+</g>
+</svg>

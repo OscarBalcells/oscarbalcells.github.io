@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+        <link rel="stylesheet" href="../css/main.css">
+    </head>
+    <body>
+        <script>
+            function invalidForm() {
+                console.log("Invalid Form!");
+                document.getElementById("form-label").innerHTML = "Invalid API Key"
+                document.getElementById("form-label").style.color =  "rgba(250, 32, 32, 0.7)";
+                document.getElementById("form-li").style.border =  "1px solid rgba(250, 32, 32, 0.7)";
+            }
+        </script>
+        <div style="width:100%;height:100%;overflow-x:hidden;overflow-y:hidden;align-items:center;text-align:center;color:#80809F;">
+            <img onclick="window.location='https://redmedic.net'" id="api-logo" width="100" height="100" class="image-non-draggable" src="../img/api.svg">
+            <form class="form-style-7" onsubmit="invalidForm()">
+                <ul>
+                    <li id="form-li">
+                        <label id="form-label" for="text">API Key</label>
+                        <input id="form-key" type="text" name="name" maxlength="200">
+                        <span>Para obtener una llave de acceso hay que estar registrado en el programa beta</span>
+                    </li>
+                    <li>
+                        <input type="button" onclick="invalidForm()" value="Accede">
+                    </li>
+                </ul>
+            </form>
+            <div style="margin-top:32.5vh"><a id="footer-email" href="mailto:contacto@redmedic.net">contacto@redmedic.net</a></div>
+        </div>
+    </body>
+</html>
