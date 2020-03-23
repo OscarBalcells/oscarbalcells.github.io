@@ -217,7 +217,7 @@ body {
 }
 
 #editor {
-	width: 700px;
+	width: 800px;
 	margin: 50px auto 0 auto;
 }
 
@@ -377,6 +377,10 @@ body {
 }
 
 @media screen and (max-width: 950px) {
+	body {
+		overflow-x: hidden;
+	}
+
 	.stripe {
 		min-width: 950px;
 	}
@@ -441,7 +445,7 @@ body {
 	}
 
 	#editor {
-		width: 400px;
+		width: 80%;
 		margin: 20px auto 0 auto;
 	}
 
@@ -462,7 +466,7 @@ body {
 		display: block;
 		width: 80%;
 		margin-left: 15px;
-		height: 300px;
+		height: 30%;
 		font-weight: 500;
 		font-size: 30px;
 		position: relative;
