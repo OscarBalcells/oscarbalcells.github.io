@@ -378,15 +378,16 @@ body {
 
 @media screen and (max-width: 950px) {
 	body {
+		width: 100%;
 		overflow-x: hidden;
 	}
 
 	.stripe {
-		min-width: 950px;
+		min-width: 100%;
 	}
 
 	#header {
-		min-width: 100vw;
+		width: 100%;
 		align-items: center;
 		margin-bottom: 25px;
 	}
@@ -403,6 +404,7 @@ body {
 	}
 
 	#hero {
+		width: 100%;
 		margin-top: 0px;
 		align-items: center;
 		font-size: 25px;
@@ -410,8 +412,8 @@ body {
 
 	.hero-column {
 		float: none;
-		width: 90vw;
 		margin-left: 20px;
+		width: 90%;
 	}
 
 	.hero-column h1 {
@@ -457,16 +459,23 @@ body {
 
 	#heart-div {
 		display: block;
-		width: 350px;
-		height: 350px;
+		width: 80%;
 		margin: 0 auto 0 auto;
+	}
+
+	#footer-form {
+		margin-bottom: 30%;
+	}
+
+	#bottom-footer {
+		visibility: hidden;
 	}
 
 	#footer-column {
 		display: block;
 		width: 80%;
 		margin-left: 15px;
-		height: 30%;
+		height: 40%;
 		font-weight: 500;
 		font-size: 30px;
 		position: relative;
