@@ -460,8 +460,13 @@ body {
 
 	#heart-div {
 		display: block;
-		width: 80%;
 		margin: 0 auto 0 auto;
+		width: 80%;
+		/*margin-left: 10px;*/
+	}
+
+	#heart {
+		width: 100%;
 	}
 
 	#footer-form {
