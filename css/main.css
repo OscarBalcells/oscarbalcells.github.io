@@ -396,6 +396,7 @@ body {
 		float: left;
 		margin-left: 15px;
 		font-size: 50px;
+		font-weight: 900px;
 	}
 
 	#header ul {
@@ -475,6 +476,7 @@ body {
 		display: block;
 		width: 80%;
 		margin-left: 15px;
+		margin-bottom: 20px;
 		height: 40%;
 		font-weight: 500;
 		font-size: 30px;
